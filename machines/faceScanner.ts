@@ -179,7 +179,7 @@ export const createFaceScannerMachine = (vcImages: string[]) =>
 
         verifyImage: async _context => {
           try {
-            const {faceCompare} = require('react-native-nprime-face');
+            const {faceCompare} = require('@nprime/face-sdk-react-native');
 
             const rxDataURI =
               /data:(?<mime>[\w/\-.]+);(?<encoding>\w+),(?<data>.*)/;
